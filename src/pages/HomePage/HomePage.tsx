@@ -1,7 +1,15 @@
 import { FunctionComponent, useState } from 'react'
 import Icon from '@mdi/react';
 import { mdiMenu } from '@mdi/js';
-
+import { wrap } from 'module';
+import TopCategories from '../../components/topCategories/TopCategories';
+import Filters from '../../components/filters/Filters';
+import Categories from '../../components/categories/Categories';
+import ProductList from '../../components/productList/ProductList';
+import Logo from '../../components/logo/Logo';
+import Cart from  '../../components/cart/Cart';
+import Search from  '../../components/search/Search';
+import Login from '../../components/login/Login';
 interface PropsType { }
 
 
@@ -10,39 +18,34 @@ const HomePage: FunctionComponent<PropsType> = () => {
 
   
   return (
-    <div style={{ textAlign: 'left', marginLeft: 30, marginBottom: 24 }}>
-      <div style={{    
-        backgroundColor: "DodgerBlue",
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}> 
+    <div>
+      {/*logo*/}
+      <Logo/>
+      {/*cart*/}
+      <Cart/>
 
-
-   <Icon path={mdiMenu} size={1} />
-     <h2> Spark Store</h2>
-     <h4> Categories </h4>
-     <input type="text" id="search" placeholder="search" /> 
-     <input type="button" id="cart" value="cart"/> 
-     <input type="button" id="log in" value="log in"/> 
 
      
-    </div>
+      
+   
 
 
-<div>
-  <h5> Deals</h5>
+ {/* top categories */}
+ <TopCategories />
+
+ {/* filters */}
+ <Filters/>
+
+{/* productList */}
+<ProductList/>
+
+
+
 </div>
-    </div>
 
+  
+  )     
 
-
-
-
-    
-  ) 
 
 }
 
