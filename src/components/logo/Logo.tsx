@@ -1,7 +1,8 @@
 import { mdiMenu } from "@mdi/js"
 import Icon from "@mdi/react"
 
-const Logo = () =>{
+
+let Logo = () =>{
     return (
 
 <div style={{    
@@ -13,11 +14,11 @@ const Logo = () =>{
         alignItems: "center",
       }}> 
 
-
-   <Icon path={mdiMenu} size={1} />
+    <Icon path={mdiMenu} size={1}  style={{marginLeft: "20px", marginRight: "20px"}} />
+   
      <h2> Spark Store</h2>
-     <h4> Location </h4>
-     <h4> Categories </h4>
+   
+    
     
      
 

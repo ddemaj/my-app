@@ -1,27 +1,18 @@
+import { Input } from "antd"
+import { SearchOutlined, UserOutlined } from '@ant-design/icons';
+
+
 const Search = () => {
 
 
     return (
-
-        <div> 
-
-<input type="text" id="search" placeholder="search" /> 
+        <div style={{backgroundColor: "purple" , width: "30%"}}> 
+            <Input size="large" placeholder="Search" prefix={<SearchOutlined />} />
         </div>
-
-
-
-
-
-
-
-
-
-
     )
 }
 
-
-    export default Search
+export default Search 
 
 
 
