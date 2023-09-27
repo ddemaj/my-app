@@ -8,10 +8,11 @@ import { Input } from "antd"
 
 const Cart = () => {
     const [size, setSize] = useState<SizeType>('middle')
+    
 
     return (
-        <div style={{ backgroundColor: "orange"}}>
- <Button type="default" icon={<ShoppingCartOutlined />} size={size} shape="round">
+        <div style={{ backgroundColor: "orange"}} >
+ <Button type="default" icon={<ShoppingCartOutlined />} size={size} shape="round" >
             Cart
           </Button>
         </div>

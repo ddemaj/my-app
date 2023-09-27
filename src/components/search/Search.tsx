@@ -6,8 +6,8 @@ const Search = () => {
 
 
     return (
-        <div style={{backgroundColor: "purple" , width: "30%"}}> 
-            <Input size="large" placeholder="Search" prefix={<SearchOutlined />} />
+        <div style={{backgroundColor: "purple" , width: "30%" }}> 
+            <Input  placeholder="Search" style={{borderRadius:"20px", margin: "0px"}} prefix={<SearchOutlined />} />
         </div>
     )
 }
