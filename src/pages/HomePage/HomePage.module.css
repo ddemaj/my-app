@@ -1,0 +1,11 @@
+/* @media (max-width: 767px) {
+    .styleName {
+        display:none;
+    }
+} */
+
+.filtersProductsContainer {
+    display: "flex" ;
+    flex-direction: "row";
+    background-color: "blue" !important;
+}
